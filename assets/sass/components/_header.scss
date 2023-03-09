@@ -1,0 +1,94 @@
+header {
+    height: 100px;
+    background: $violet;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    img {
+        width: 64px;
+        filter: drop-shadow(0 0 6px #000000);
+        animation: animationImage infinite linear alternate-reverse both 2000ms;
+        transition: all 0.3s;
+    }
+
+    .dropdown {
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        background-color: $violet-fonce;
+    }
+
+    .dropdown li {
+        position: relative;
+    }
+
+    .dropdown li a {
+        color: $blanc;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
+
+    .dropdown li ul {
+        position: absolute;
+        top: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+        line-height: normal;
+        background-color: $background;
+    }
+
+    .dropdown li ul li a {
+        text-align: left;
+        color: $violet;
+        font-size: 14px;
+        padding: 10px 25px;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .dropdown li ul li a:hover {
+        background-color: $violet-fonce;
+        color: $blanc;
+    }
+
+    .dropdown li ul li ul {
+        left: 100%;
+        top: 0;
+    }
+
+    ul li:hover > a {
+        background-color: $violet-fonce;
+        color: $blanc;
+    }
+
+    ul li:hover > ul {
+        display: block;
+    }
+
+    @keyframes animationImage {
+        0% {
+            transform: scale(0.9);
+        }
+
+        100% {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        margin: 20px;
+        padding: 20px;
+    }
+}

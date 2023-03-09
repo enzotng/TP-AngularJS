@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Module Simple</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="dropdown">
+                <li><a href="#"><i class="bi bi-list"></i> Menu</a>
+                    <ul class="margin">
+                        <li><a href="#">TP n°1</a>
+                            <ul>
+                                <li><a href="index.html">Demo</a></li>
+                                <li><a href="hello.html">Hello</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TP n°2</a>
+                            <ul>
+                                <li><a href="mymodule.html">MyModule</a></li>
+                                <li><a href="simplemodule.html">SimpleModule</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TP n°3</a>
+                            <ul>
+                                <li><a href="inputvalidation.html">InputValidation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TP n°4</a>
+                            <ul>
+                                <li><a href="simplebinding.html">SimpleBinding</a></li>
+                                <li><a href="repeatbinding.html">RepeatBinding</a></li>
+                                <li><a href="nestedrepeat.html">NestedRepeat</a></li>
+                                <li><a href="simplefilter.html">SimpleFilter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TP n°5</a>
+                            <ul>
+                                <li><a href="logservice.html">LogService</a></li>
+                                <li><a href="areaservice.html">AreaService</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html"><img src="./assets/images/png/angular.png" alt="Image AngularJS"></a>
+    </header>
+    
+    <main>
+        <p>Demo disable button. Checked Checkbox to enable button</p>
+        <br>
+        <p><input type="checkbox" ng-model="agree">I agree to the terms & conditions</p>
+        <p>
+            <button type="submit" ng-disabled="!agree">Submit</button>
+        </p>
+
+    </main>
+    <footer></footer>
+    <script src="./assets/js/script/angular.min.js"></script>
+    <script src="./assets/controllers/contactmodule.js"></script>
+    <script src="./assets/js/script/main.js"></script>
+
+</body>
+
+</html>

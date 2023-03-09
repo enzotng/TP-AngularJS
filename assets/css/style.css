@@ -1,0 +1,444 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Raleway:ital@0;1&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Raleway";
+  background: #f0f3f4;
+}
+
+button {
+  padding: 10px 30px;
+  margin-block: 10px;
+  background: #444492;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Raleway";
+  transition: all 0.3s;
+}
+button:hover {
+  background: #222292;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+input:not([type=checkbox], [type=radio]) {
+  width: 100%;
+  margin-block: 2vh;
+  height: 2em;
+  font-family: "Raleway";
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #dd1b16;
+}
+
+hr {
+  width: 10%;
+  border: 1px solid lightgray;
+  margin-block: 2vh;
+}
+
+.main_binding {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 20px;
+  margin: 50px;
+  background: #fff;
+  border-radius: 10px;
+  height: calc(100vh - 400px);
+  transition: all 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: "Raleway";
+}
+.main_binding input[type=text],
+.main_binding [type=email] {
+  height: 2.5em;
+}
+.main_binding button {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.main_binding .result_binding {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.main_binding select {
+  height: 2.5em;
+  margin-block-end: 2vh;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  background: #fff;
+  border-radius: 10px;
+  height: calc(100vh - 400px);
+  transition: all 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+main h1 {
+  font-weight: bold;
+  font-size: clamp(1.25rem, 0.7143rem + 2.6786vw, 2rem);
+  text-transform: uppercase;
+  padding: 15px;
+  background: #444492;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  margin-block-end: 2vh;
+}
+main form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+main form input[type=text], main form [type=email] {
+  padding-block: 5px;
+  padding-inline: 10px;
+  margin-block: 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  background: #444492;
+  height: 3em;
+}
+main form input.ng-invalid.ng-dirty {
+  color: #fff;
+  background-color: #ff0000;
+  height: 3em;
+  font-weight: bold;
+}
+main form input.ng-valid.ng-dirty {
+  background-color: #78fa89;
+  color: #000;
+  font-weight: bold;
+  height: 3em;
+}
+
+.hello p,
+.hello label {
+  font-size: 1.5rem;
+}
+.hello input {
+  background-color: #f0f3f4;
+  width: 100%;
+  height: 3em;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  padding-inline: 5px;
+  margin-block: 2vh;
+  font-size: 1.125rem;
+}
+
+.logservice button {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+}
+
+.areaservice button {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 20px;
+    padding: 20px;
+    height: calc(100vh - 280px);
+  }
+  header {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+.binding_gauche {
+  width: 50%;
+  margin-inline-end: 10px;
+}
+
+.binding_droite {
+  width: 50%;
+  margin-inline-start: 10px;
+}
+.binding_droite .radio_binding {
+  margin-block-end: 5vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+header {
+  height: 100px;
+  background: #444492;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+header img {
+  width: 64px;
+  filter: drop-shadow(0 0 6px #000000);
+  animation: animationImage infinite linear alternate-reverse both 2000ms;
+  transition: all 0.3s;
+}
+header .dropdown {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  background-color: #222292;
+}
+header .dropdown li {
+  position: relative;
+}
+header .dropdown li a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+header .dropdown li ul {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  line-height: normal;
+  background-color: #f0f3f4;
+}
+header .dropdown li ul li a {
+  text-align: left;
+  color: #444492;
+  font-size: 14px;
+  padding: 10px 25px;
+  display: block;
+  white-space: nowrap;
+}
+header .dropdown li ul li a:hover {
+  background-color: #222292;
+  color: #fff;
+}
+header .dropdown li ul li ul {
+  left: 100%;
+  top: 0;
+}
+header ul li:hover > a {
+  background-color: #222292;
+  color: #fff;
+}
+header ul li:hover > ul {
+  display: block;
+}
+@keyframes animationImage {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+footer {
+  height: 100px;
+  background: #444492;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

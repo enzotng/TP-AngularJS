@@ -15,6 +15,10 @@ header {
         transition: all 0.3s;
     }
 
+    nav {
+        z-index: 2;
+    }
+
     .dropdown {
         float: left;
         margin: 0;

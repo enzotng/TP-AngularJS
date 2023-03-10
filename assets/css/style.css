@@ -193,11 +193,11 @@ hr {
   margin: 50px;
   background: #fff;
   border-radius: 10px;
-  height: calc(100vh - 400px);
   transition: all 0.3s;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   font-family: "Raleway";
+  z-index: 1;
 }
 .main_binding input[type=text],
 .main_binding [type=email] {
@@ -226,7 +226,7 @@ main {
   margin: 50px;
   background: #fff;
   border-radius: 10px;
-  height: calc(100vh - 400px);
+  padding: 20px;
   transition: all 0.3s;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -309,7 +309,6 @@ main form input.ng-valid.ng-dirty {
   main {
     margin: 20px;
     padding: 20px;
-    height: calc(100vh - 280px);
   }
   header {
     margin: 20px;
@@ -336,6 +335,21 @@ main form input.ng-valid.ng-dirty {
   flex-direction: row;
 }
 
+.item {
+  background: #f0f3f4;
+  border-radius: 5px;
+  padding: 20px;
+  color: #000;
+}
+
+.subitem {
+  margin: 2vh;
+  background: #444492;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+}
+
 header {
   height: 100px;
   background: #444492;
@@ -352,6 +366,9 @@ header img {
   filter: drop-shadow(0 0 6px #000000);
   animation: animationImage infinite linear alternate-reverse both 2000ms;
   transition: all 0.3s;
+}
+header nav {
+  z-index: 2;
 }
 header .dropdown {
   float: left;

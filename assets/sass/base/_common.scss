@@ -56,11 +56,11 @@ hr {
   margin: 50px;
   background: $blanc;
   border-radius: 10px;
-  height: calc(100vh - 400px);
   transition: all 0.3s;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   position: relative;
   font-family: "Raleway";
+  z-index: 1;
   input[type="text"],
   [type="email"] {
     height: 2.5em;
@@ -92,7 +92,7 @@ main {
   margin: 50px;
   background: $blanc;
   border-radius: 10px;
-  height: calc(100vh - 400px);
+  padding: 20px;
   transition: all 0.3s;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   h1 {
@@ -181,7 +181,6 @@ main {
   main {
     margin: 20px;
     padding: 20px;
-    height: calc(100vh - 280px);
   }
 
   header {
@@ -208,4 +207,19 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+.item {
+  background: $background;
+  border-radius: 5px;
+  padding: 20px;
+  color: $noir;
+}
+
+.subitem {
+  margin: 2vh;
+  background: $violet;
+  border-radius: 5px;
+  padding: 20px;
+  color: $blanc;
 }

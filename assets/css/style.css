@@ -191,6 +191,7 @@ hr {
   align-items: stretch;
   padding: 20px;
   margin: 50px;
+  height: 60vh !important;
   background: #fff;
   border-radius: 10px;
   transition: all 0.3s;
@@ -363,14 +364,11 @@ header {
 }
 header img {
   width: 64px;
-  filter: drop-shadow(0 0 6px #000000);
-  animation: animationImage infinite linear alternate-reverse both 2000ms;
-  transition: all 0.3s;
 }
 header nav {
   z-index: 2;
 }
-header .dropdown {
+header nav .dropdown {
   float: left;
   margin: 0;
   padding: 0;
@@ -378,17 +376,17 @@ header .dropdown {
   width: 100%;
   background-color: #222292;
 }
-header .dropdown li {
+header nav .dropdown li {
   position: relative;
 }
-header .dropdown li a {
+header nav .dropdown li a {
   color: #fff;
   text-align: center;
   text-decoration: none;
   display: block;
   padding: 10px;
 }
-header .dropdown li ul {
+header nav .dropdown li ul {
   position: absolute;
   top: 100%;
   margin: 0;
@@ -398,7 +396,7 @@ header .dropdown li ul {
   line-height: normal;
   background-color: #f0f3f4;
 }
-header .dropdown li ul li a {
+header nav .dropdown li ul li a {
   text-align: left;
   color: #444492;
   font-size: 14px;
@@ -406,28 +404,20 @@ header .dropdown li ul li a {
   display: block;
   white-space: nowrap;
 }
-header .dropdown li ul li a:hover {
+header nav .dropdown li ul li a:hover {
   background-color: #222292;
   color: #fff;
 }
-header .dropdown li ul li ul {
+header nav .dropdown li ul li ul {
   left: 100%;
   top: 0;
 }
-header ul li:hover > a {
+header nav ul li:hover > a {
   background-color: #222292;
   color: #fff;
 }
-header ul li:hover > ul {
+header nav ul li:hover > ul {
   display: block;
-}
-@keyframes animationImage {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1.2);
-  }
 }
 
 @media only screen and (max-width: 768px) {
